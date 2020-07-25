@@ -30,5 +30,5 @@ formElement.addEventListener("submit", (event) => {
 
     let result = calculateResult(select, PLN);
 
-    countElement.innerText = `${PLN} PLN = ${result.toFixed(2)} ${select}`;
+    countElement.innerText = `${PLN} PLN = ${result} ${select}`;
 });
