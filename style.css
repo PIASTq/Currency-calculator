@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: rgba(238, 238, 238, 0.692);
+}
+
+.container {
+    margin: 10px;
+    padding: 5px;
+}
+
+.header {
+    text-align: center;
+    font-style: italic;
+    color: teal;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px tomato;
+}
+
+.form {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.fieldset {
+    border: 1px solid #222;
+    border-radius: 12px;
+}
+
+.legend {
+    color: teal;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(241, 138, 120);
+    border: 1px solid #222;
+    border-radius: 15px;
+}
+
+.input_text {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.required {
+    color: red;
+}
+
+.input {
+    width: 100%;
+    max-width: 250px;
+}
+
+.required_caption {
+    font-size: 13px;
+    color: red;
+    margin-left: 5px;
+}
+
+.button {
+    margin: 4px 12px;
+    background-color: rgb(241, 138, 120);
+    color: teal;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #222;
+    border-radius: 10px;
+}

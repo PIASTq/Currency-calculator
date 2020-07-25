@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Kalkulator walut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script defer src="/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header">
+                Kalkulator walut
+            </h1>
+        </header>
+    
+        <form class="js-form form">
+            <fieldset class="fieldset">
+                <legend class="legend">
+                    Podaj dane
+                </legend>
+                <p>
+                    <label>
+                        <span class="input_text">
+                            Podaj kwotę PLN (Polska)<sapn class="required">*</sapn>:
+                        </span>
+                        <input class="js-pln input" type="number" required min="0.1" step="any">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="input_text">
+                            Wybierz walutę<sapn class="required">*</sapn>:
+                        </span>
+                        <select required class="js-select input">
+                            <option selected disabled>
+
+                            </option>
+                            <option class="eur" value="EUR">
+                                EUR (Unia Europejska)
+                            </option>
+                            <option class="usd" value="USD">
+                                USD (USA)
+                            </option>
+                            <option class="gbp" value="GBP">
+                                GBP (W. Brytania)
+                            </option>
+                            <option class="chf" value="CHF">
+                                CHF (Szwajcaria)
+                            </option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    Wartość podana w PLN w przeliczeniu to: <strong class="js-count">N/A</strong>
+                </p>
+                <p class="required_caption">
+                    *Pola obowiązkowe
+                </p>
+            </fieldset>
+            <p>
+                <button class="button">
+                    Przelicz!
+                </button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
