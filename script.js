@@ -1,5 +1,5 @@
 const formElement = document.querySelector(".js-form");
-const plnInput = document.querySelector(".js-pln");
+let plnInput = document.querySelector(".js-pln");
 const selectElement = document.querySelector(".js-select");
 const countElement = document.querySelector(".js-count");
 
@@ -26,9 +26,9 @@ formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const select = selectElement.value;
-    const PLN = plnInput.value;
+    let PLN = plnInput.value;
 
     let result = calculateResult(select, PLN);
 
-    countElement.innerText = `${PLN} PLN = ${result} ${select}`;
+    countElement.innerText = `${PLN} PLN = ${result.toFixed(2)} ${select}`;
 });
